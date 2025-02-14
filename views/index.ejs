@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO-Optimized Meta Description -->
+    <meta name="description" content="Sage & Silk offers timeless elegance with refined, sustainable clothing. Discover our collection of luxe, versatile pieces made for the modern lifestyle. Shop now for free shipping on orders over $50!">
+    
+    <!-- Author Meta -->
+    <meta name="author" content="Sage & Silk">
+    
+    <!-- SEO-Optimized Title -->
+    <title>Sage & Silk | Elegant, Sustainable Clothing for the Modern Lifestyle</title>
+    
+    <!-- Canonical URL to Avoid Duplicate Content -->
+    <link rel="canonical" href="https://www.sageandsilk.netlify.com" />
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Sage & Silk | Elegant, Sustainable Clothing for the Modern Lifestyle">
+    <meta property="og:description" content="Discover timeless elegance with Sage & Silk's refined, sustainable clothing. Shop luxe, versatile pieces for the modern lifestyle.">
+    <meta property="og:image" content="https://www.sageandsilk.netlify.com/assets/images/hero-banner.jpg">
+    <meta property="og:url" content="https://www.sageandsilk.netlify.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sage & Silk | Elegant, Sustainable Clothing for the Modern Lifestyle">
+    <meta name="twitter:description" content="Discover timeless elegance with Sage & Silk's refined, sustainable clothing. Shop luxe, versatile pieces for the modern lifestyle.">
+    <meta name="twitter:image" content="https://www.sageandsilk.netlify.com/assets/images/hero-banner.jpg">
+    
+    <!-- Schema Markup for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Sage & Silk",
+      "url": "https://www.sageandsilk.netlify.com",
+      "description": "Discover timeless elegance with Sage & Silk's refined, sustainable clothing. Shop luxe, versatile pieces for the modern lifestyle.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.sageandsilk.netlify.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/owl-carousel.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+    
+    <style>
+        /* General Modal Styles */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .modal img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .modal h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .modal p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .modal input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .modal .btn {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .modal .btn:hover {
+            background: #555;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .close-modal:hover {
+            color: #f44336;
+        }
+
+     /* Preloader Styles */
+     #preloader {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed; /* Use fixed for full-page overlay */
+            top: 0;
+            left: 0;
+            width: 100%; /* Full width of the viewport */
+            height: 100%; /* Full height of the viewport */
+            background-color: #fff; /* White background for the loading screen */
+            z-index: 9999; /* Ensure the preloader is on top of all elements */
+        }
+
+        #preloader img {
+            max-width: 200px; /* Adjust the size of the GIF */
+            max-height: 200px;
+            display: block; /* Ensure the GIF is properly displayed */
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <img src="assets/images/loader.gif" alt="Loading..." />
+    </div>
+</body>
+
+
+    <!-- Newsletter Modal -->
+    <div id="coming-soon-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img src="/assets/images/coming.jpg" alt="Coming Soon">
+            <h2>Sign Up for our exclusive email list and be the first to know about new products and special offers</h2>
+            <form method="post" action="#" id="contact_form">
+                <input type="email" name="contact[email]" placeholder="Email address" required>
+                <button type="submit" class="btn">Follow us for updates!</button>
+            </form>
+            <ul class="list--inline site-footer__social-icons social-icons">
+                <li><a class="social-icons__link" href="#" title="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                <li><a class="social-icons__link" href="#" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a class="social-icons__link" href="#" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                <li><a class="social-icons__link" href="#" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a class="social-icons__link" href="#" title="YouTube"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                <li><a class="social-icons__link" href="#" title="Vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+              </ul>
+        </div>
+    </div>
+
+    <!-- JavaScript to handle modal behavior a>-->
+    <script>
+        // Show modal on page load
+        window.onload = function () {
+            document.getElementById('coming-soon-modal').style.display = "flex";
+        };
+
+        // Close modal when the 'X' is clicked
+        document.querySelector('.close-modal').onclick = function () {
+            document.getElementById('coming-soon-modal').style.display = "none";
+        };
+        
+    </script>
+
+</body>
+
+</html>
+
+    
+ <!-- ***** Header Area Start ***** -->
+ <div class="top-header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-10 col-sm-8 col-md-5 col-lg-4">
+                <div class="currency-picker">
+                    <span class="selected-currency">USD</span>
+                    <ul id="currencies">
+                        <li data-currency="INR" class="">INR</li>
+                        <li data-currency="GBP" class="">GBP</li>
+                        <li data-currency="CAD" class="">CAD</li>
+                        <li data-currency="USD" class="selected">USD</li>
+                        <li data-currency="AUD" class="">AUD</li>
+                        <li data-currency="EUR" class="">EUR</li>
+                        <li data-currency="JPY" class="">JPY</li>
+                    </ul>
+                </div>
+                
+                <p class="phone-no"><i class="anm anm-phone-s"></i> Whatsapp  +234 8059307739</p>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4 d-none d-lg-none d-md-block d-lg-block">
+                <div class="text-center"><p class="top-header_middle-text"> Worldwide Express Shipping</p></div>
+            </div>
+            <div class="col-2 col-sm-4 col-md-3 col-lg-4 text-right">
+                <div class="site-header d-flex justify-content-end align-items-center">
+                    <div class="site-header__search">
+                        <button type="button" class="search-trigger">
+                            <i class="icon anm anm-search-l"></i>
+                        </button>
+                    </div>
+                <span class="user-menu d-block d-lg-none">
+                    <i class="anm anm-user-al" aria-hidden="true"></i>
+                </span>
+                <ul class="customer-links list-inline">
+                    <% if (user) { %>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle user-name" data-toggle="dropdown" aria-expanded="false">
+                                <%= user.username %>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/mycart">My Cart</a></li>
+                                <li><a href="/wishlist">My Wishlists</a></li>
+                                <li><a href="/tracking">My Tracking</a></li>
+                                <li><a href="/orders">My Orders</a></li>
+                                <li><a href="/logout">Logout</a></li>
+                            </ul>
+                        </li>
+                    <% } else { %>
+                        <li class="scroll-to-section"><a href="/signup">SignUp/Login</a></li>
+                    <% } %>
+                </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!--End Top Header-->
+<!--Header-->
+<div class="header-wrap classicHeader animated d-flex">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <!-- Desktop Logo -->
+            <div class="logo col-md-2 col-lg-2 d-none d-lg-block">
+                <a href="/">
+                    <img src="/assets/images/sagesilk.png" alt="Sagesilk" style="max-height: 60px;" />
+                </a>
+            </div>
+            <!-- End Desktop Logo -->
+
+            <div class="col-2 col-sm-3 col-md-3 col-lg-8">
+                <!-- Mobile Menu Toggle -->
+                <div class="d-block d-lg-none">
+                    <button type="button" class="btn--link site-header__menu js-mobile-nav-toggle mobile-nav--open">
+                        <i class="icon anm anm-times-l"></i>
+                        <i class="anm anm-bars-r"></i>
+                    </button>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="d-none d-lg-block">
+                    <nav class="grid__item" id="AccessibleNav">
+                        <ul id="siteNav" class="site-nav medium center hidearrow">
+                            <li class="lvl1 parent megamenu"><a href="/women">Women's Collection <i class="anm anm-angle-down-l"></i></a></li>
+                            <li class="lvl1 parent megamenu"><a href="/men">Men's Collection <i class="anm anm-angle-down-l"></i></a></li>
+                            <li class="lvl1 parent megamenu"><a href="/kids">Kid's Collection <i class="anm anm-angle-down-l"></i></a></li>
+                            <li class="lvl1 parent megamenu"><a href="/accessories">Accessories <i class="anm anm-angle-down-l"></i></a></li>
+                            <li class="lvl1 parent megamenu"><a href="/wigs">Wigs & Haircare <i class="anm anm-angle-down-l"></i></a></li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+                <!-- End Desktop Menu -->
+            </div>
+
+            <!-- Mobile Logo -->
+            <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-block d-lg-none mobile-logo">
+                <div class="logo">
+                    <a href="/">
+                        <img src="/assets/images/sagesilk.png" alt="Sagesilk" style="max-height: 60px;" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Mobile Menu -->
+<div class="mobile-nav-wrapper d-lg-none" role="navigation">
+    <div class="closemobileMenu">
+        <i class="icon anm anm-times-l pull-right"></i> Close Menu
+    </div>
+    <ul id="MobileNav" class="mobile-nav">
+        <li class="lvl1 parent megamenu"><a href="/">Home</a></li>
+        <li class="lvl1 parent megamenu"><a href="/men">Men's Collection</a></li>
+        <li class="lvl1 parent megamenu"><a href="/kids">Kid's Collection</a></li>
+        <li class="lvl1 parent megamenu"><a href="/accessories">Accessories</a></li>
+        <li class="lvl1 parent megamenu"><a href="/wigs">Wigs & Haircare</a></li>
+        <li class="lvl1 parent megamenu"><a href="/makeup">Makeup & Skincare</a></li>
+        <li class="lvl1 parent megamenu"><a href="/scents">Skincare & Scents</a></li>
+    </ul>
+</div>
+
+<!-- ***** Header Area End ***** -->
+<div class="main-banner" id="top">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Left Content (slideshow section) -->
+            <div class="col-lg-6">
+                <div class="left-content">
+                    <div class="thumb">
+                        <div class="left-content-slider owl-carousel">
+                            <div class="item">
+                                <div class="inner-content">
+                                    <h4>Bold & Beautiful</h4>
+                                    <span>Redefine Elegance</span>
+                                    <div class="main-border-button">
+                                        <a href="#">Discover Timeless Styles</a>
+                                    </div>
+                                </div>
+                                <img src="assets/images/instagram4.jpg" alt="Elegant Fashion">
+                            </div>
+                            <div class="item">
+                                <div class="inner-content">
+                                    <h4>Effortless Chic</h4>
+                                    <span>Your Everyday Glam</span>
+                                    <div class="main-border-button">
+                                        <a href="#">Shop the Look</a>
+                                    </div>
+                                </div>
+                                <img src="assets/images/menbanner1.jpg" alt="Modern Fashion">
+                            </div>
+                            <div class="item">
+                                <div class="inner-content">
+                                    <h4>Color Pop</h4>
+                                    <span>Dare to Stand Out</span>
+                                    <div class="main-border-button">
+                                        <a href="#">Browse Vibrant Styles</a>
+                                    </div>
+                                </div>
+                                <img src="assets/images/baby.jpg" alt="Bold Looks">
+                            </div>
+                            <div class="item">
+                                <div class="inner-content">
+                                    <h4>Power Heels</h4>
+                                    <span>Walk With Confidence</span>
+                                    <div class="main-border-button">
+                                        <a href="#">Shop Footwear</a>
+                                    </div>
+                                </div>
+                                <img src="assets/images/heel.jpg" alt="Fashionable Heels">
+                            </div>
+                            <div class="item">
+                                <div class="inner-content">
+                                    <h4>Mini Trends</h4>
+                                    <span>Style for the Little Ones</span>
+                                    <div class="main-border-button">
+                                        <a href="#">Shop Kidswear</a>
+                                    </div>
+                                </div>
+                                <img src="assets/images/cutebaby.jpg" alt="Cute Baby Outfits">
+                            </div>
+                            <div class="item">
+                                <div class="inner-content">
+                                    <h4>Cultural Flair</h4>
+                                    <span>Tradition Meets Trend</span>
+                                    <div class="main-border-button">
+                                        <a href="#">Explore Ethnic Wear</a>
+                                    </div>
+                                </div>
+                                <img src="assets/images/nativeman.jpg" alt="Traditional Styles">
+                            </div>
+                            <div class="item">
+                                <div class="inner-content">
+                                    <h4>Playful Days</h4>
+                                    <span>Comfort for Little Adventurers</span>
+                                    <div class="main-border-button">
+                                        <a href="#">Shop Boys’ Collection</a>
+                                    </div>
+                                </div>
+                                <img src="assets/images/cuteboy.jpg" alt="Kidswear Trends">
+                            </div>
+                            <div class="item">
+                                <div class="inner-content">
+                                    <h4>Heritage Elegance</h4>
+                                    <span>Graceful & Bold</span>
+                                    <div class="main-border-button">
+                                        <a href="#">Discover Ethnic Trends</a>
+                                    </div>
+                                </div>
+                                <img src="assets/images/nativewoman.jpg" alt="Elegant Ethnic Wear">
+                            </div>
+                            <div class="item">
+                                <div class="inner-content">
+                                    <h4>Teen Spirit</h4>
+                                    <span>Trendy & Youthful</span>
+                                    <div class="main-border-button">
+                                        <a href="#">Shop Youth Styles</a>
+                                    </div>
+                                </div>
+                                <img src="assets/images/younggirl.jpg" alt="Trendy Teen Styles">
+                            </div>
+                            <div class="item">
+                                <div class="inner-content">
+                                    <h4>Jump Into Style</h4>
+                                    <span>Effortless One-Piece Looks</span>
+                                    <div class="main-border-button">
+                                        <a href="#">Shop Jumpsuits</a>
+                                    </div>
+                                </div>
+                                <img src="assets/images/jumper.jpg" alt="Stylish Jumpsuits">
+                            </div>
+                            <div class="item">
+                                <div class="inner-content">
+                                    <h4>Casual Cool</h4>
+                                    <span>Relaxed Yet Refined</span>
+                                    <div class="main-border-button">
+                                        <a href="#">Explore Everyday Styles</a>
+                                    </div>
+                                </div>
+                                <img src="assets/images/instagram3.jpg" alt="Casual Fashion">
+                            </div>
+                            <div class="item">
+                                <div class="inner-content">
+                                    <h4>Sunny Days</h4>
+                                    <span>Stay Cool, Look Hot</span>
+                                    <div class="main-border-button">
+                                        <a href="#">Shop Summer Vibes</a>
+                                    </div>
+                                </div>
+                                <img src="assets/images/sandals.jpg" alt="Summer Sandals">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+                <div class="col-lg-6">
+                    <div class="right-content">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="right-first-image">
+                                    <div class="thumb">
+                                        <div class="inner-content">
+                                            <h4>Women</h4>
+                                            <span>Best Clothes For Women</span>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="inner">
+                                                <h4>Women</h4>
+                                                <p>Discover a range of elegant, trend-setting pieces tailored for every woman’s unique style—designed to make you feel confident, chic, and comfortable in every look.</p>
+                                                <div class="main-border-button">
+                                                    <a href="/women">Discover More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/women2.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="right-first-image">
+                                    <div class="thumb">
+                                        <div class="inner-content">
+                                            <h4>Men</h4>
+                                            <span>Best Clothes For Men</span>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="inner">
+                                                <h4>Men</h4>
+                                                <p>Effortlessly stylish and crafted for durability, our men’s collection brings together modern essentials and timeless classics for the refined and casual wardrobe alike.</p>
+                                                <div class="main-border-button">
+                                                    <a href="/men">Discover More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/menbanner.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="col-lg-6">
+                                <div class="right-first-image">
+                                    <div class="thumb">
+                                        <div class="inner-content">
+                                            <h4>Kids</h4>
+                                            <span>Best Clothes For Kids</span>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="inner">
+                                                <h4>Kids</h4>
+                                                <p>Adorable, practical, and super comfy, our children’s collection offers vibrant styles that kids love and quality that parents trust.</p>
+                                                <div class="main-border-button">
+                                                    <a href="/kids">Discover More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/baner-right-image-03.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="col-lg-6">
+                                <div class="right-first-image">
+                                    <div class="thumb">
+                                        <div class="inner-content">
+                                            <h4>Accessories</h4>
+                                            <span>Best Trend Accessories</span>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="inner">
+                                                <h4>Accessories</h4>
+                                                <p>Complete any outfit with our accessories collection, featuring everything from bold jewelry to cozy scarves—adding that perfect finishing touch to elevate your look.</p>
+                                                <div class="main-border-button">
+                                                    <a href="/accessories">Discover More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/baner-right-image-04.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="right-first-image">
+                                    <div class="thumb">
+                                        <div class="inner-content">
+                                            <h4>Makeup</h4>
+                                            <span>Best Trend Makeup</span>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="inner">
+                                                <h4>Makeup</h4>
+                                                <p>Discover the latest in trendy makeup essentials, from bold palettes to subtle highlights, designed to complement every look and occasion.</p>
+                                                <div class="main-border-button">
+                                                    <a href="/makeup">Discover More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/makeup.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="right-first-image">
+                                    <div class="thumb">
+                                        <div class="inner-content">
+                                            <h4>Hair Care And Extensions</h4>
+                                            <span>Best Trend Hair Accessories</span>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="inner">
+                                                <h4>Wigs and Extensions</h4>
+                                                <p>Enhance your hairstyle with our premium hair care products and extensions. From nourishing treatments to stylish wigs, achieve your desired look effortlessly.</p>
+                                                <div class="main-border-button">
+                                                    <a href="/wigs">Discover More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/hair.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                              
+                                   
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Main Banner Area End ***** -->
+
+    <section class="section" id="men">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-heading">
+                        <h2>Step into Style & Comfort</h2>
+                        <span>Fashion should do more than just follow trends—it should feel as good as it looks. Our collection brings you the latest in stylish, comfortable clothing crafted to elevate your wardrobe effortlessly. From casual essentials to statement pieces, we make it easy for you to look sharp and feel confident every day. Because true style isn’t just about what you wear, but how it makes you feel.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="men-item-carousel">
+                        <div class="owl-men-item owl-carousel">
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="/products"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="/wishlist"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="/mycart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/home-men/men1.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Tailored Blazer</h4>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="/products"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="/wishlist"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="/mycart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/home-men/men-1.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Casual Chinos</h4>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="/products"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="/wishlist"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="/mycart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/home-men/men6.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Striped Polo</h4>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="/products"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="/wishlist"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="/mycart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/home-men/fashionman.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Denim Jacket</h4>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="/products"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="/wishlist"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="/mycart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/home-men/jeans.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Jeans</h4>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="/products"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="/wishlist"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="/mycart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/home-men/men4.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Classic Shirt</h4>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="/products"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="/wishlist"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="/mycart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/home-men/pants.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Pants</h4>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="/products"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="/wishlist"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="/mycart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/home-men/men7.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Classic Shirt</h4>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="/products"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="/wishlist"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="/mycart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/home-men/men3.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Lightweight Hoodie</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- ***** Women Area Starts ***** -->
+    <section class="section" id="women">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-heading">
+                        <h2>Effortlessly Elegant & Uniquely You</h2>
+                        <span>Our women’s collection is all about effortless elegance. We bring together timeless pieces and fresh trends to create a wardrobe that celebrates individuality and comfort. From graceful dresses to versatile essentials, each item is designed to move with you, making every day a stylish occasion.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="women-item-carousel">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="/products"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="/wishlist"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="/mycart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/home-women/women-1.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Classic Gowns</h4>
+                                    
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="/products"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="/wishlist"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="/mycart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/home-women/women-6.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Blouse & Tops</h4>
+                                    
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="/products"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="/wishlist"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="/mycart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/home-women/women-13.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Corporate Wear</h4>
+                                    
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="/products"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="/wishlist"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="/mycart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/home-women/women-4.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Playsuits</h4>
+                                
+                                  
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="/products"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="/wishlist"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="/mycart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/home-women/women-7.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Jumpsuits</h4>
+                                  
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="/products"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="/wishlist"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="/mycart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/home-women/women-2.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Skirts </h4>
+                                    
+                                  
+                                </div>
+                            </div>  
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="/products"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="/wishlist"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="/mycart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/home-women/women-3.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Silk Dress</h4>
+                                   
+                                  
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="/products"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="/wishlist"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="/mycart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/home-women/women-9.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Two-Pieces</h4>
+                                    
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="/products"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="/wishlist"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="/mycart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/home-women/women-8.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Wedding Guest</h4>
+                                    
+                                  
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="/products"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="/wishlist"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="/mycart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/home-women/women-5.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Sequins Dress</h4>
+                                   
+                                  
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="/products"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="/wishlist"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="/mycart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/home-women/women-111.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>Cocktail Gowns</h4>
+                                    
+                                </div>
+                            </div> 
+                            <div class="item">
+                                <div class="thumb">
+                                    <div class="hover-content">
+                                        <ul>
+                                            <li><a href="/products"><i class="fa fa-eye"></i></a></li>
+                                            <li><a href="/wishlist"><i class="fa fa-star"></i></a></li>
+                                            <li><a href="/mycart"><i class="fa fa-shopping-cart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <img src="assets/images/home-women/women-12.jpg" alt="">
+                                </div>
+                                <div class="down-content">
+                                    <h4>BodySuits</h4>
+                                    
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Women Area Ends ***** -->
+
+   <!-- ***** Kids Area Starts ***** -->
+<section class="section" id="kids">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="section-heading">
+                    <h2>Little Style Icons</h2>
+                    <span>Outfits designed to keep up with boundless energy and endless imagination. From everyday essentials to statement pieces, our kids' collection is all about fun, comfort, and playful fashion. Let them express themselves, one stylish look at a time!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="kid-item-carousel">
+                    <div class="owl-kid-item owl-carousel">
+                        <!-- Existing Items -->
+                        <div class="item">
+                            <div class="thumb">
+                                <div class="hover-content">
+                                    <ul>
+                                        <li><a href="/products"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="/wishlist"><i class="fa fa-star"></i></a></li>
+                                        <li><a href="/mycart"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <img src="/assets/images/home-kids/kid1.jpg" alt="">
+                            </div>
+                            <div class="down-content">
+                                <h4>Back-to-School Essentials</h4>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb">
+                                <div class="hover-content">
+                                    <ul>
+                                        <li><a href="/products"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="/wishlist"><i class="fa fa-star"></i></a></li>
+                                        <li><a href="/mycart"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <img src="assets/images/home-kids/kid3.jpg" alt="">
+                            </div>
+                            <div class="down-content">
+                                <h4>Sunny Day Cap</h4>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb">
+                                <div class="hover-content">
+                                    <ul>
+                                        <li><a href="/products"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="/wishlist"><i class="fa fa-star"></i></a></li>
+                                        <li><a href="/mycart"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <img src="assets/images/home-kids/kid2.jpg" alt="">
+                            </div>
+                            <div class="down-content">
+                                <h4>Adventure Ready</h4>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb">
+                                <div class="hover-content">
+                                    <ul>
+                                        <li><a href="/products"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="/wishlist"><i class="fa fa-star"></i></a></li>
+                                        <li><a href="/mycart"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <img src="assets/images/home-kids/kid4.jpg" alt="">
+                            </div>
+                            <div class="down-content">
+                                <h4>Little Explorer</h4>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb">
+                                <div class="hover-content">
+                                    <ul>
+                                        <li><a href="/products"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="/wishlist"><i class="fa fa-star"></i></a></li>
+                                        <li><a href="/mycart"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <img src="assets/images/home-kids/kid9.jpg" alt="">
+                            </div>
+                            <div class="down-content">
+                                <h4>Tiny Traveler</h4>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb">
+                                <div class="hover-content">
+                                    <ul>
+                                        <li><a href="/products"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="/wishlist"><i class="fa fa-star"></i></a></li>
+                                        <li><a href="/mycart"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <img src="assets/images/home-kids/kid5.jpg" alt="">
+                            </div>
+                            <div class="down-content">
+                                <h4>Playtime Pro</h4>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb">
+                                <div class="hover-content">
+                                    <ul>
+                                        <li><a href="/products"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="/wishlist"><i class="fa fa-star"></i></a></li>
+                                        <li><a href="/mycart"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <img src="assets/images/home-kids/kid10.jpg" alt="">
+                            </div>
+                            <div class="down-content">
+                                <h4>Springtime Vibes</h4>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb">
+                                <div class="hover-content">
+                                    <ul>
+                                        <li><a href="/product"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="/wishlists"><i class="fa fa-star"></i></a></li>
+                                        <li><a href="/mycart"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <img src="assets/images/home-kids/kid6.jpg" alt="">
+                            </div>
+                            <div class="down-content">
+                                <h4>Playful Prints</h4>
+                            </div>
+                        </div>
+    
+                        <!-- Newly Added Rows -->
+                        <div class="item">
+                            <div class="thumb">
+                                <div class="hover-content">
+                                    <ul>
+                                        <li><a href="/products"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="/wishlist"><i class="fa fa-star"></i></a></li>
+                                        <li><a href="/mycart"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <img src="assets/images/home-kids/kid12.jpg" alt="">
+                            </div>
+                            <div class="down-content">
+                                <h4>Cozy Comfort</h4>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="thumb">
+                                <div class="hover-content">
+                                    <ul>
+                                        <li><a href="/products"><i class="fa fa-eye"></i></a></li>
+                                        <li><a href="/wishlist"><i class="fa fa-star"></i></a></li>
+                                        <li><a href="/mycart"><i class="fa fa-shopping-cart"></i></a></li>
+                                    </ul>
+                                </div>
+                                <img src="/assets/images/home-kids/kid8.jpg" alt="">
+                            </div>
+                            <div class="down-content">
+                                <h4>Rainy Day Fun</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ***** Kids Area Ends ***** -->
+
+    <!-- ***** Explore Area Starts ***** -->
+    <section class="section" id="explore">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="left-content">
+                        <h2>Discover Your Perfect Look</h2>
+                        <span>Dive into our curated selection at Sage & Silk, where every piece is handpicked to add style and personality to your wardrobe. Our product lineup covers everything from elegant clothing to eye-catching accessories, offering endless possibilities for creating your signature look. Whether you’re updating your closet with trendy staples or finding that unique accessory to complete an outfit, we’ve got you covered with quality pieces that blend comfort and sophistication. Take a look and discover how easy it is to express your style with Sage & Silk!</span>
+                        <div class="quote">
+                            <i class="fa fa-quote-left"></i><p>"Because life’s too short for boring clothes and uninteresting accessories. Let’s make sure your ‘running errands’ look is as fabulous as your ‘big night out’ attire!.</p>
+                        </div>
+                        
+                        <div class="main-border-button">
+                            <a href="/products">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="right-content">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="leather">
+                                    <h4>Leather Bags</h4>
+                                    <span>Latest Collection</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="first-image">
+                                    <img src="assets/images/explore1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="second-image">
+                                    <img src="assets/images/shoe.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="types">
+                                    <h4>Different Types</h4>
+                                    <span>Over 304 Products</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Explore Area Ends ***** -->
+
+    <!-- ***** Social Area Starts ***** -->
+    <section class="section" id="social">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2>Social Media</h2>
+                        <span>Stay connected with us on social media! Follow Sage & Silk for the latest updates, exclusive deals, and a peek into our world of style and fashion. Let’s keep in touch and make every shopping experience more exciting together.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row images">
+                <div class="col-2">
+                    <div class="thumb">
+                        <div class="icon">
+                            <a href="http://instagram.com">
+                                <h6>Chic</h6>
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                        <img src="assets/images/instagram.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="thumb">
+                        <div class="icon">
+                            <a href="http://instagram.com">
+                                <h6>New</h6>
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                        <img src="assets/images/white sweater.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="thumb">
+                        <div class="icon">
+                            <a href="http://instagram.com">
+                                <h6>Elegant</h6>
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                        <img src="assets/images/shoes.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="thumb">
+                        <div class="icon">
+                            <a href="http://instagram.com">
+                                <h6>stylish</h6>
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                        <img src="assets/images/instagram10.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="thumb">
+                        <div class="icon">
+                            <a href="http://instagram.com">
+                                <h6>Glam</h6>
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                        <img src="assets/images/boots.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="thumb">
+                        <div class="icon">
+                            <a href="http://instagram.com">
+                                <h6>Classy</h6>
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                        <img src="assets/images/bag.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Social Area Ends ***** -->
+
+    <!-- ***** Subscribe Area Starts ***** -->
+    <div class="subscribe">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="section-heading">
+                        <h2>Stay in the loop with the latest trends and exclusive offers by subscribing to our newsletter!</h2>
+                        <span>At Sage & Silk, we’re dedicated to bringing you the freshest styles and insights in fashion. Sign up today and be the first to know about our new arrivals, special promotions, and insider tips to elevate your wardrobe. Join our community and let your style shine with every update!</span>
+                    </div>
+                    <form id="subscribe" action="" method="get">
+                        <div class="row">
+                          <div class="col-lg-5">
+                            <fieldset>
+                              <input name="name" type="text" id="name" placeholder="Your Name" required="">
+                            </fieldset>
+                          </div>
+                          <div class="col-lg-5">
+                            <fieldset>
+                              <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email Address" required="">
+                            </fieldset>
+                          </div>
+                          <div class="col-lg-2">
+                            <fieldset>
+                              <button type="submit" id="form-submit" class="main-dark-button"><a href="mailto:sage-silk@gmail.com" class="fa fa-paper-plane"></a></button>
+                            </fieldset>
+                          </div>
+                        </div>
+                    </form>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <!-- ***** Subscribe Area Ends ***** -->
+
+    
+    <!-- ***** Footer Start ***** -->
+    <!--Footer-->
+    <footer id="footer" class="footer-2">
+        <div class="site-footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="logo">
+                        <img src="/assets/images/sagesilk.png" alt="sage-silk logo">
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-3 contact-box">
+                            <h4>Contact Us</h4>
+                            <ul class="addressFooter">
+                                <li><i class="icon anm anm-map-marker-al"></i><p>Green Tower Plaza, Okukoko, Warri, Delta State, Nigeria</p></li>
+                                <li class="phone"><i class="icon anm anm-phone-s"></i><p>+234-8059-3077-39, +234-8095-5212-17</p></li>
+                                <li class="fa-envelope-o"><i class="icon-email"></i><a href="mailto:sage-silk@gmail.com">sage-silk@gmail.com</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-3 footer-links">
+                            <h4>Quick Shop</h4>
+                            <ul>
+                                <li><a href="/women">Women</a></li>
+                                <li><a href="/men">Men</a></li>
+                                <li><a href="/kids">Kids</a></li>
+                                <li><a href="/makeup">Cosmetics</a></li>
+                                <li><a href="/accessories">Accessories</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-3 footer-links">
+                            <h4>Informations</h4>
+                            <ul>
+                                <li><a href="/about">About us</a></li>
+                                <li><a href="/shipping">Shipping</a></li>
+                                <li><a href="/racking">Tracking</a></li>
+                                <li><a href="/terms">Terms &amp; condition</a></li>
+                                <li><a href="/profile">My Account</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-3 footer-links">
+                            <h4>Customer Services</h4>
+                            <ul>
+                                <li><a href="">Request Personal Data</a></li>
+                                <li><a href="/FAQ">FAQ's</a></li>
+                                <li><a href="/contact">Contact Us</a></li>
+                                <li><a href="/myorders">Orders and Returns</a></li>
+                                <li><a href="#">Support Center</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="footer-bottom">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 order-1 order-md-0 order-lg-0 order-sm-1 copyright text-sm-center text-md-left text-lg-left">
+                            <div class="under-footer">
+                                <p>Copyright © 2025 All Rights Reserved.</p>
+                                <p>Design: <a href="https://github.com/byjove19" target="_parent" title="byjove19">Byjove</a></p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 order-0 order-md-1 order-lg-1 order-sm-0 payment-icons text-right text-md-center">
+                            <ul class="payment-icons list--inline">
+                                <li><i class="icon fa fa-cc-visa" aria-hidden="true"></i></li>
+                                <li><i class="icon fa fa-cc-mastercard" aria-hidden="true"></i></li>
+                                <li><i class="icon fa fa-cc-discover" aria-hidden="true"></i></li>
+                                <li><i class="icon fa fa-cc-paypal" aria-hidden="true"></i></li>
+                                <li><i class="icon fa fa-cc-amex" aria-hidden="true"></i></li>
+                                <li><i class="icon fa fa-credit-card" aria-hidden="true"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+     <!--Scoll Top-->
+     <span id="site-scroll"><i class="icon anm anm-angle-up-r"></i></span>
+     <!--End Scoll Top-->
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/accordions.js"></script>
+    <script src="assets/js/datepicker.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script> 
+    <script src="assets/js/slick.js"></script> 
+    <script src="assets/js/lightbox.js"></script> 
+    <script src="assets/js/isotope.js"></script> 
+ <!-- Global Init -->
+
+ 
+ <script src="assets/js/custom.js"></script>
+  
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+   $(document).ready(function () {
+    
+    const preloader = $("#preloader");
+    if (preloader.length) {
+        setTimeout(() => preloader.hide(), 1000);
+    }
+
+    $(".search-trigger").click(() => $(".search").addClass("open"));
+    $(".close-btn").click(() => $(".search").removeClass("open"));
+
+    $(".left-content-slider").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        items: 1,
+        responsive: { 0: { items: 1 }, 600: { items: 1 }, 1000: { items: 1 } },
+    });
+
+    $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        responsive: { 0: { items: 1 }, 600: { items: 2 }, 1000: { items: 3 } },
+    });
+
+    setInterval(showNextSlide, 3000);
+
+    $('.next-btn').click(showNextSlide);
+    $('.prev-btn').click(function () {
+        $(slides[currentIndex]).fadeOut();
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        $(slides[currentIndex]).fadeIn();
+    });
+
+    document.querySelectorAll('.add-to-wishlist').forEach(function (element) {
+        element.addEventListener('click', function (event) {
+            event.preventDefault();
+            const productId = this.getAttribute('data-product-id');
+            addToWishlist(productId);
+        });
+    });
+
+    document.querySelectorAll('.add-to-cart').forEach(function (element) {
+        element.addEventListener('click', function (event) {
+            event.preventDefault();
+            const productId = this.getAttribute('data-product-id');
+            addToCart(productId);
+        });
+    });
+
+    document.querySelectorAll('.view-product').forEach(function (element) {
+        element.addEventListener('click', function () {
+            const productId = this.getAttribute('data-product-id');
+            viewProduct(productId);
+        });
+    });
+});
+
+function addToWishlist(productId) {
+    console.log(`Product ${productId} added to wishlist.`);
+}
+
+function addToCart(productId) {
+    console.log(`Product ${productId} added to cart.`);
+}
+
+function viewProduct(productId) {
+    console.log(`Viewing product ${productId}.`);
+}
+
+$(function() {
+            var selectedClass = "";
+            $("p").click(function(){
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("."+selectedClass).fadeOut();
+            setTimeout(function() {
+              $("."+selectedClass).fadeIn();
+              $("#portfolio").fadeTo(50, 1);
+            }, 500);
+                
+            });
+        });
+</script>
+
+
+
+
+  </body>
+</html>

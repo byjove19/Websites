@@ -1,0 +1,93 @@
+<!-- comingsoon.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Coming Soon – Sage and Silk</title>
+    <meta name="description" content="Our new store is coming soon!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/images/chic.png" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+
+    <style>
+        /* Modal styles */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        .close-modal {
+            background-color: #f44336;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .close-modal:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Coming Soon Modal -->
+    <div id="coming-soon-modal" class="modal">
+        <div class="modal-content">
+            <div class="password-main__inner text-center">
+                <!-- main content -->
+                <a href="/" class="site-header__logo-image">
+                    <img src="/assets/images/sagesilk.png alt="Sage and Silk Logo" />
+                </a>
+                <h2 class="password__title"><b>Our new store is coming soon</b></h2>
+                <p class="password__form-heading h4">Follow us for updates!</p>
+                <form method="post" action="#" id="contact_form" accept-charset="UTF-8" class="contact-form">
+                    <div class="input-group password__input-group">
+                        <input type="email" name="contact[email]" id="Email" class="input-group__field" placeholder="Email address">
+                        <span class="input-group__btn">
+                            <button type="submit" name="commit" class="btn"> <span>Notify me</span> </button>
+                        </span>
+                    </div>
+                </form>
+                <button id="close-modal" class="close-modal">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript to handle modal behavior -->
+    <script>
+        // Show the modal when the page loads
+        window.onload = function() {
+            document.getElementById('coming-soon-modal').style.display = "block";
+        };
+
+        // Close the modal when the "Close" button is clicked
+        document.getElementById('close-modal').onclick = function() {
+            document.getElementById('coming-soon-modal').style.display = "none";
+        };
+    </script>
+</body>
+
+</html>

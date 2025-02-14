@@ -1,0 +1,89 @@
+<!-- views/welcome.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Sage & Silk</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url('/assets/images/explore2.jpg'); /* Replace with the path to your welcome background image */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Welcome container styling */
+        .welcome-container {
+            background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+            padding: 2rem 3rem;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Welcome message styling */
+        .welcome-container h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            margin-bottom: 1rem;
+        }
+
+        .welcome-container p {
+            font-size: 18px;
+            margin-bottom: 2rem;
+        }
+
+        /* Button styling */
+        .welcome-container .btn {
+            padding: 12px 20px;
+            background-color: #8e7d6b;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .welcome-container .btn:hover {
+            background-color: #6e5b4a;
+        }
+
+        /* Responsive design */
+        @media (max-width: 480px) {
+            .welcome-container h1 {
+                font-size: 24px;
+            }
+
+            .welcome-container p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <h1>Welcome to Sage & Silk, <%= username %>!</h1>
+        <p>We're thrilled to have you! Enjoy a delightful shopping experience with us.</p>
+        <a href="/" class="btn">Go to Homepage</a>
+    </div>
+</body>
+</html>

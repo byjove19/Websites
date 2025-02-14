@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Women’s Collection – Bold Fashion for Every Occasion | Sage & Silk</title>
+    <meta name="description" content="Discover the latest women’s clothing collection at Sage & Silk. From elegant dinner dresses to casual wear, make a bold fashion statement with soft, comfortable fabrics.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- SEO Optimization Meta Tags -->
+    <meta name="keywords" content="Women's Clothing, Sage & Silk, Dinner Dresses, Casual Wear, Elegant Fashion, Women’s Collection, Bold Statement, Soft Fashion, Online Shopping">
+    <meta name="author" content="Sage & Silk">
+    <meta property="og:title" content="Women’s Collection – Bold Fashion for Every Occasion | Sage & Silk" />
+    <meta property="og:description" content="Shop Sage & Silk's women's collection for bold and soft fashion. Find elegant dresses, casual outfits, and more to elevate your style." />
+    <meta property="og:image" content="https://example.com/assets/images/sagesilk-womens-collection.jpg" />
+    <meta property="og:url" content="https://sage-silk.com/womens-collection" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Women’s Collection – Bold Fashion for Every Occasion | Sage & Silk">
+    <meta name="twitter:description" content="Shop the latest women’s collection at Sage & Silk. From bold dinner dresses to casual essentials, redefine your wardrobe today.">
+    <meta name="twitter:image" content="https://example.com/assets/images/sagesilk-womens-collection.jpg">
+    <meta name="robots" content="index, follow">
+    
+<!-- Favicon -->
+<link rel="shortcut icon" href="assets/images/favicon.png" />
+<!-- Plugins CSS -->
+<link rel="stylesheet" href="assets2/css/plugins.css">
+<!-- Bootstap CSS -->
+<link rel="stylesheet" href="assets2/css/bootstrap.min.css">
+<!-- Main Style CSS -->
+<link rel="stylesheet" href="assets2/css/style.css">
+<link rel="stylesheet" href="assets2/css/responsive.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+
+<body class="template-index belle home7-shoes">
+    <div id="pre-loader">
+        <img src="/assets/images/loader.gif" alt="Loading..." />
+    </div>
+</div>
+    <div class="pageWrapper">
+        <!--Search Form Drawer-->
+        <div class="search">
+            <div class="search__form">
+                <form class="search-bar__form" action="/search" method="GET">
+                    <!-- Search Input -->
+                    <input 
+                        class="search__input" 
+                        type="search" 
+                        name="q" 
+                        placeholder="Search for items..." 
+                        aria-label="Search" 
+                        autocomplete="off"
+                        oninput="showSuggestions(this.value)"
+                    />
+                    
+                    <!-- Search Button -->
+                    <button class="go-btn search__button" type="submit">
+                        <i class="icon anm anm-search-l"></i>
+                    </button>
+                </form>
+        
+                <!-- Suggestions Dropdown -->
+                <div id="suggestions" class="search-suggestions">
+                    <!-- Dynamic suggestions will be displayed here -->
+                </div>
+        
+                <!-- Close Button -->
+                <button type="button" class="search-trigger close-btn">
+                    <i class="anm anm-times-l"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!--End Search Form Drawer-->
+        <!--Top Header-->
+        <div class="top-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-10 col-sm-8 col-md-5 col-lg-4">
+                        <div class="currency-picker">
+                            <span class="selected-currency">USD</span>
+                            <ul id="currencies">
+                                <li data-currency="INR" class="">INR</li>
+                                <li data-currency="GBP" class="">GBP</li>
+                                <li data-currency="CAD" class="">CAD</li>
+                                <li data-currency="USD" class="selected">USD</li>
+                                <li data-currency="AUD" class="">AUD</li>
+                                <li data-currency="EUR" class="">EUR</li>
+                                <li data-currency="JPY" class="">JPY</li>
+                            </ul>
+                        </div>
+                        
+                        <p class="phone-no"><i class="anm anm-phone-s"></i> Whatsapp  +234 8059307739</p>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4 d-none d-lg-none d-md-block d-lg-block">
+                        <div class="text-center"><p class="top-header_middle-text"> Worldwide Express Shipping</p></div>
+                    </div>
+                    <div class="col-2 col-sm-4 col-md-3 col-lg-4 text-right">
+                        <div class="site-header d-flex justify-content-end align-items-center">
+                            <div class="site-header__search">
+                                <button type="button" class="search-trigger">
+                                    <i class="icon anm anm-search-l"></i>
+                                </button>
+                            </div>
+                        <span class="user-menu d-block d-lg-none">
+                            <i class="anm anm-user-al" aria-hidden="true"></i>
+                        </span>
+                        <ul class="customer-links list-inline">
+                            <% if (user) { %>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle user-name" data-toggle="dropdown" aria-expanded="false">
+                                        <%= user.username %>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="/mycart">My Cart</a></li>
+                                        <li><a href="/wishlist">My Wishlists</a></li>
+                                        <li><a href="/tracking">My Tracking</a></li>
+                                        <li><a href="/orders">My Orders</a></li>
+                                        <li><a href="/logout">Logout</a></li>
+                                    </ul>
+                                </li>
+                            <% } else { %>
+                                <li class="scroll-to-section"><a href="/signup">SignUp/Login</a></li>
+                            <% } %>
+                        </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!--End Top Header-->
+        <!--Header-->
+        <div class="header-wrap classicHeader animated d-flex">
+            <div class="container-fluid">        
+                <div class="row align-items-center">
+                    <!--Desktop Logo-->
+                    <div class="logo col-md-2 col-lg-2 d-none d-lg-block">
+                        <a href="/">
+                            <img src="/assets/images/sagesilk.png" alt="Sagesilk" style="max-height: 60px;" />
+                        </a>
+                    </div>
+                    <!--End Desktop Logo-->
+                    <div class="col-2 col-sm-3 col-md-3 col-lg-8">
+                        <div class="d-block d-lg-none">
+                            <button type="button" class="btn--link site-header__menu js-mobile-nav-toggle mobile-nav--open">
+                                <i class="icon anm anm-times-l"></i>
+                                <i class="anm anm-bars-r"></i>
+                            </button>
+                        </div>
+                        <!--Desktop Menu-->
+                        <div class="row">
+                            <nav class="grid__item" id="AccessibleNav">
+                                <ul id="siteNav" class="site-nav medium center hidearrow">
+                                    <li class="lvl1 parent megamenu"><a href="/">Home <i class="anm anm-angle-down-l"></i></a>
+                                       
+                                    </li>
+                                    <li class="lvl1 parent megamenu"><a href="/men">Men's Collection <i class="anm anm-angle-down-l"></i></a>
+                                        <div class="megamenu style4">
+                                            <ul class="grid grid--uniform mmWrapper">
+                                                <!-- Formal & Business Wear Section -->
+                                                <li class="grid__item lvl-1 col-md-3 col-lg-3">
+                                                    <a href="#" class="site-nav lvl-1">Formal & Business Wear</a>
+                                                    <ul class="subLinks">
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Formal Suits</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Blazers</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Dress Shirts</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Smart Casuals</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Formal Footwear</a></li>
+                                                    </ul>
+                                                </li>
+                                                <!-- Casual & Seasonal Wear Section -->
+                                                <li class="grid__item lvl-1 col-md-3 col-lg-3">
+                                                    <a href="#" class="site-nav lvl-1">Casual & Seasonal Wear</a>
+                                                    <ul class="subLinks">
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Knitwear <span class="lbl nm_label3">Hot</span></a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Sweaters</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">T-Shirts</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Trousers & Chinos</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Casual Footwear</a></li>
+                                                    </ul>
+                                                </li>
+                                    
+                                                <li class="grid__item lvl-1 col-md-6 col-lg-6">
+                                                    <a href="/men"><img src="/assets2/images/men/men-collection.jpg" alt="" title="" /></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="lvl1 parent megamenu"><a href="/kids">Kid's Collection <i class="anm anm-angle-down-l"></i></a>
+                                        <div class="megamenu style4">
+                                            <ul class="grid grid--uniform mmWrapper">
+                                                <!-- Kid's Clothing Section -->
+                                                <li class="grid__item lvl-1 col-md-3 col-lg-3">
+                                                    <a href="#" class="site-nav lvl-1">Kid's Clothing</a>
+                                                    <ul class="subLinks">
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Dresses</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Shirts</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Blazers</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Smart Casuals</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Footwear</a></li>
+                                                    </ul>
+                                                </li>
+                                                <!-- Seasonal & Ethnic Wear Section -->
+                                                <li class="grid__item lvl-1 col-md-3 col-lg-3">
+                                                    <a href="#" class="site-nav lvl-1">Seasonal & Ethnic Wear</a>
+                                                    <ul class="subLinks">
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Knitwear <span class="lbl nm_label3">Hot</span></a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Sweaters</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">African Prints</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Trousers & Shorts</a></li>
+                                                    </ul>
+                                                </li>
+                                    
+                                                <li class="grid__item lvl-1 col-md-6 col-lg-6">
+                                                    <a href="/kids"><img src="/assets2/images/kids/kid-section1.jpg" alt="" title="" /></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="lvl1 parent megamenu"><a href="/accessories">Accessories <i class="anm anm-angle-down-l"></i></a>
+                                        <div class="megamenu style4">
+                                            <ul class="grid grid--uniform mmWrapper">
+                                                <!-- Fashion Accessories Section -->
+                                                <li class="grid__item lvl-1 col-md-3 col-lg-3">
+                                                    <a href="#" class="site-nav lvl-1">Fashion Accessories</a>
+                                                    <ul class="subLinks">
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Hats & Caps</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Belts</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Jewelry</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Sunglasses</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Watches</a></li>
+                                                    </ul>
+                                                </li>
+                                                <!-- Beauty Accessories Section -->
+                                                <li class="grid__item lvl-1 col-md-3 col-lg-3">
+                                                    <a href="#" class="site-nav lvl-1">Beauty & Hair Accessories</a>
+                                                    <ul class="subLinks">
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Hair Accessories <span class="lbl nm_label3">Hot</span></a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Socks & Hosiery</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Face Masks</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Perfumes</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Skincare</a></li>
+                                                    </ul>
+                                                </li>
+                                    
+                                                <li class="grid__item lvl-1 col-md-6 col-lg-6">
+                                                    <a href="/men"><img src="/assets2/images/women-bags/accesories.jpg" alt="" title="" /></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="lvl1 parent megamenu"><a href="/wigs">Wigs & Haircare <i class="anm anm-angle-down-l"></i></a>
+                                        <div class="megamenu style4">
+                                            <ul class="grid grid--uniform mmWrapper">
+                                                <!-- Wigs Section -->
+                                                <li class="grid__item lvl-1 col-md-3 col-lg-3">
+                                                    <a href="#" class="site-nav lvl-1">Wigs</a>
+                                                    <ul class="subLinks">
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Chinese Bone Straight</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Vietnamese Hair</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Single Donor Hair</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Afro Textured Wigs</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Hair Extensions</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Wig Caps</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Combs & Brushes</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Styling Tools <span class="lbl nm_label3">Hot</span></a></li>
+                                                    </ul>
+                                                </li>
+                                                <!-- Haircare Section -->
+                                                <li class="grid__item lvl-1 col-md-3 col-lg-3">
+                                                    <a href="#" class="site-nav lvl-1">Haircare</a>
+                                                    <ul class="subLinks">
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Shampoos & Conditioners</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Leave-In Treatments</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Hair Oils & Serums</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Heat Protectants</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Scalp Treatments</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Hairbands & Clips</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Storage & Maintenance Kits</a></li>
+                                                    </ul>
+                                                </li>
+                                    
+                                                <li class="grid__item lvl-1 col-md-6 col-lg-6">
+                                                    <a href="/wigs"><img src="/assets2/images/wigs/wig-section.jpg" alt="" title="" /></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="lvl1 parent megamenu"><a href="/makeup">Makeup & Skincare <i class="anm anm-angle-down-l"></i></a>
+                                        <div class="megamenu style4">
+                                            <ul class="grid grid--uniform mmWrapper">
+                                                <!-- Makeup Section -->
+                                                <li class="grid__item lvl-1 col-md-3 col-lg-3">
+                                                    <a href="#" class="site-nav lvl-1">Makeup</a>
+                                                    <ul class="subLinks">
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Foundations & Primers</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Lipsticks & Glosses</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Eyeshadow & Palettes</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Mascara & Eyeliners</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Blushes & Highlighters</a></li>
+                                                    </ul>
+                                                </li>
+                                                <!-- Skincare Section -->
+                                                <li class="grid__item lvl-1 col-md-3 col-lg-3">
+                                                    <a href="#" class="site-nav lvl-1">Skincare</a>
+                                                    <ul class="subLinks">
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Moisturizers</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Cleansers & Toners</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Face Masks & Treatments</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Sunscreens</a></li>
+                                                        <li class="lvl-2"><a href="" class="site-nav lvl-2">Serums & Oils <span class="lbl nm_label3">Hot</span></a></li>
+                                                    </ul>
+                                                </li>
+                                                
+                                                <li class="grid__item lvl-1 col-md-6 col-lg-6">
+                                                    <a href="/men"><img src="/assets2/images/makeup/makeup-section.jpg" alt="" title="" /></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                            </nav>
+                        </div>
+                        <!--End Desktop Menu-->
+                    </div>
+                    <!--Mobile Logo-->
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-block d-lg-none mobile-logo">
+                        <div class="logo">
+                            <a href="/">
+                                <img src="/assets/images/sagesilk.png" alt="Sagesilk" style="max-height: 60px;" />
+                            </a>
+                        </div>
+                    </div>
+                    <!--Mobile Logo-->
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!--End Header-->
+        <!--Mobile Menu-->
+        <div class="mobile-nav-wrapper" role="navigation">
+            <div class="closemobileMenu"><i class="icon anm anm-times-l pull-right"></i> Close Menu</div>
+            <ul id="MobileNav" class="mobile-nav">
+                <li class="lvl1 parent megamenu"><a href="/">Home <i class=""></i></a>
+             
+                <li class="lvl1 parent megamenu"><a href="/men">Men'S Collection <i class=""></i></a>
+                <li class="lvl1 parent megamenu"><a href="/kids">Kid's Collection <i class=""></i></a>
+                <li class="lvl1 parent megamenu"><a href="/accessories">Accessories <i class=""></i></a>
+                <li class="lvl1 parent megamenu"><a href="/wigs">Wigs And Haircare <i class=""></i></a>
+                <li class="lvl1 parent megamenu"><a href="/makeup">Cosmetic <i class=""></i></a>
+                <li class="lvl1 parent megamenu"><a href="/scents">Skincare And Scents <i class=""></i></a>  
+                </li>
+        </div>
+        <!--End Mobile Menu-->
+        
+
+        <!-- Main Billboard Section -->
+        <main id="billboard" style="position: relative;">
+            <div class="position-relative" style="background: url('assets/images/suitup.png'); background-size: cover; background-position: center center; height: 100vh;">
+                <div class="container d-flex justify-content-center align-items-center" style="height: 100%;">
+                    <div class="text-center">
+                        <h2 class="display-1 text-white" style="font-size: 5rem; font-family: 'Cormorant Garamond', serif; text-transform: uppercase; letter-spacing: 6px; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.6);">
+                            WOMEN<br>COLLECTION
+                        </h2>
+                        <div>
+                            <a href="#" class="btn btn-light" style="font-family: 'Poppins', sans-serif; font-size: 1.2rem; padding: 10px 20px; border-radius: 30px; transition: background-color 0.3s ease, color 0.3s ease;">SHOP NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Main Content Section -->
+        <div class="col-12 col-sm-12 col-md-9 col-lg-9 main-col">
+            <div class="category-description">
+                <p style="font-size: 20px; line-height: 1.6; color: #a1a1a1; font-family: 'Poppins', sans-serif; text-align: justify; font-style: italic; margin-bottom: 20px;">
+                    Our women’s collection is all about effortless elegance. We bring together timeless pieces and fresh trends to create a wardrobe that celebrates individuality and comfort. From graceful dresses to versatile essentials, each item is designed to move with you, making every day a stylish occasion.
+                </p>
+                <p style="font-size: 20px; line-height: 1.6; color: #a1a1a1; font-family: 'Poppins', sans-serif; text-align: justify; font-style: italic;">
+                    Indulge in the opulence of fine fabrics, intricate details, and breathtaking designs carefully crafted from high-quality materials. Each piece combines style, comfort, and durability.
+                </p>
+            </div>
+        </div>
+    </div>
+
+   
+   
+</body>
+
+        
+        <!-- Lookbook Start -->
+        <div class="lookbook-1">
+        	<div class="lookbook grid grid-masonary">
+            	<div class="grid-sizer"></div>
+            	<div class="grid-lookbook grid-item">
+                    <img src="assets/images/womendress.jpg" alt="">
+                    <div class="caption">
+                        <h2>Dress & Gowns</h2>
+                    </i> </a>
+                    </div>
+                    <a class="overlay" href="/women/dresses-and-gowns"></a>
+                </div>
+                <div class="grid-lookbook grid-item">
+                    <img src="assets2/images/product-images/tops.jpg" alt="">
+                    <div class="caption">
+                      <h2>Blouses and Tops</h2>
+                    </a>
+                    </div>
+                    <a class="overlay" href="/women/blouses-tops"></a>
+            	</div>
+                <div class="grid-lookbook grid-item">
+          			<img src="assets/images/browndress.jpg" alt="">
+        			<div class="caption">
+          				<h2>Dinner Dress</h2>
+          			</a>
+        			</div>
+        			<a class="overlay" href="/women/dinner-gowns"></a>
+        		</div>
+                <div class="grid-lookbook grid-item">
+          			<img src="assets/images/women6.jpg" alt="">
+        			<div class="caption">
+          				<h2>Two-Pieces</h2>
+          	
+        			</div>
+        			<a class="overlay" href="/women/Two-Pieces"></a>
+        		</div>
+                <div class="grid-lookbook grid-item">
+          			<img src="assets2/images/collection/stilletos.jpg" alt="">
+        			<div class="caption">
+          <h2>Footwears</h2>
+          
+        </div>
+        			<a class="overlay" href="/women/footwears"></a>  </div>
+                    <div class="grid-lookbook grid-item">
+                        <img src="assets/images/women-01.jpg" alt="">
+                        <div class="caption">
+                            <h2>Outerwear & Jackets</h2>
+                        </div>
+                        <a class="overlay" href="/women/Jackets"></a>
+                    </div>
+                    <div class="grid-lookbook grid-item">
+                        <img src="assets/images/jumpsuit.jpg" alt="">
+                        <div class="caption">
+                          <h2>Jumpsuits</h2>
+                        >
+                        </div>
+                        <a class="overlay" href="/women/jumpsuits"></a>
+                    </div>
+                    <div class="grid-lookbook grid-item">
+                          <img src="assets/images/skirt.jpg" alt="">
+                        <div class="caption">
+                              <h2>Skirts And Pants</h2>
+                            </a>
+                        </div>
+                        <a class="overlay" href="/women/skirts-pants"></a>
+                    </div>
+                    <div class="grid-lookbook grid-item">
+                          <img src="assets2/images/collection/rippedjeans.jpg"alt="">
+                        <div class="caption">
+                              <h2>Jeans And Leggings</h2>
+                                              </div>
+                        <a class="overlay" href="/women/jeans"></a>
+                    </div>
+                    <div class="grid-lookbook grid-item">
+                          <img src="assets/images/africaprints.jpg" alt="">
+                        <div class="caption">
+              <h2>African Prints</h2>
+              
+            </div>
+                        <a class="overlay" href="/women/africanprints"></a>  </div>
+                        <div class="grid-lookbook grid-item">
+                            <img src="assets2/images/slideshow-banners/bags.jpg" alt="">
+                            <div class="caption">
+                                <h2>Bags</h2>
+                            </div>
+                            <a class="overlay" href="/women/bags"></a>
+                        </div>
+                        <div class="grid-lookbook grid-item">
+                            <img src="assets/images/wigs.jpg" alt="">
+                            <div class="caption">
+                              <h2>Wigs And Hair Care</h2>
+                            </div>
+                            <a class="overlay" href="/women/wigs.ejs"></a>
+                        </div>
+                        <div class="grid-lookbook grid-item">
+                            <img src="/assets2/images/collection/jewellery.jpg" alt="">
+                            <div class="caption">
+                              <h2>Accessories</h2>
+                            </div>
+                            <a class="overlay" href="/women/accessories.ejs"></a>
+                        </div>
+                        <div class="grid-lookbook grid-item">
+                            <img src="assets/images/makeupbrush.jpg" alt="">
+                            <div class="caption">
+                              <h2>Makeup</h2>
+                            </div>
+                            <a class="overlay" href="/women/makeup"></a>
+                        </div>
+            	</div>
+        </div>
+
+    </div>
+    <!--End Body Content-->
+    
+    <!--Footer-->
+       <!--Footer-->
+       <footer id="footer" class="footer-2">
+        <div class="site-footer">
+            <div class="container">
+                <!--Footer Links-->
+                <div class="footer-top">
+                    <div class="logo">
+                        <img src="/assets/images/sagesilk.png" alt="sage-silklogo">
+                    </div>
+                    <div class="row">
+                        <!-- Contact Information -->
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-3 contact-box">
+                            <h4 class="h4">Contact Us</h4>
+                            <ul class="addressFooter">
+                                <li><i class="icon anm anm-map-marker-al"></i><p>Green Tower Plaza, Okukoko, Warri, Delta State, Nigeria</p></li>
+                                <li class="phone"><i class="icon anm anm-phone-s"></i><p>+234-8059-3077-39, +234-8095-5212-17</p></li>
+                                <li><a href="mailto:sage-silk@gmail.com">sage-silk@gmail.com</a></li>
+                            </ul>
+                        </div>
+    
+                        <!-- Quick Shop -->
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-3 footer-links">
+                            <h4 class="h4">Quick Shop</h4>
+                            <ul>
+                                <li><a href="/women">Women</a></li>
+                                <li><a href="/men">Men</a></li>
+                                <li><a href="/kids">Kids</a></li>
+                                <li><a href="/makeup">Cosmetics</a></li>
+                                <li><a href="/accessories">Accessories</a></li>
+                            </ul>
+                        </div>
+    
+                        <!-- Informations -->
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-3 footer-links">
+                            <h4 class="h4">Informations</h4>
+                            <ul>
+                                <li><a href="/about">About us</a></li>
+                                <li><a href="/shipping">Shipping</a></li>
+                                <li><a href="/racking">Tracking</a></li>
+                                <li><a href="/terms">Terms &amp; condition</a></li>
+                                <li><a href="/profile">My Account</a></li>
+                            </ul>
+                        </div>
+    
+                        <!-- Customer Services -->
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-3 footer-links">
+                            <h4 class="h4">Customer Services</h4>
+                            <ul>
+                                <li><a href="">Request Personal Data</a></li>
+                                <li><a href="/FAQ">FAQ's</a></li>
+                                <li><a href="/contact">Contact Us</a></li>
+                                <li><a href="/myorders">Orders and Returns</a></li>
+                                <li><a href="#">Support Center</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--End Footer Links-->
+                <hr>
+                <div class="footer-bottom">
+                    <div class="row">
+                        <!--Footer Copyright-->
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 order-1 order-md-0 order-lg-0 order-sm-1 copyright text-sm-center text-md-left text-lg-left">
+                            <div class="under-footer">
+                                <p>Copyright © 2025 All Rights Reserved.</p>
+                                <p>Design: <a href="https://github.com/byjove19" target="_parent" title="byjove19">Byjove</a></p>
+                            </div>
+                        </div>
+                        <!--End Footer Copyright-->
+                        <!--Footer Payment Icon-->
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 order-0 order-md-1 order-lg-1 order-sm-0 payment-icons text-right text-md-center">
+                            <ul class="payment-icons list--inline">
+                                <li><i class="icon fa fa-cc-visa" aria-hidden="true"></i></li>
+                                <li><i class="icon fa fa-cc-mastercard" aria-hidden="true"></i></li>
+                                <li><i class="icon fa fa-cc-discover" aria-hidden="true"></i></li>
+                                <li><i class="icon fa fa-cc-paypal" aria-hidden="true"></i></li>
+                                <li><i class="icon fa fa-cc-amex" aria-hidden="true"></i></li>
+                                <li><i class="icon fa fa-credit-card" aria-hidden="true"></i></li>
+                            </ul>
+                        </div>
+                        <!--End Footer Payment Icon-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End Footer-->
+    
+    <!--Scoll Top-->
+    <span id="site-scroll"><i class="icon anm anm-angle-up-r"></i></span>
+    <!--End Scoll Top-->
+    
+     <!-- Including jQuery and Plugins -->
+<script src="assets2/js/vendor/jquery-3.3.1.min.js"></script>
+<script src="assets2/js/vendor/jquery.cookie.js"></script>
+<script src="assets2/js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="assets2/js/vendor/wow.min.js"></script>
+<script src="assets2/js/vendor/masonry.js"></script>
+
+<!-- Including Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+<!-- Including Additional Plugins -->
+<script src="assets2/js/plugins.js"></script>
+<script src="assets2/js/lazysizes.js"></script>
+
+<!-- Including Main JavaScript -->
+<script src="assets2/js/main.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        var cart = [];
+
+        const formatPrice = (price) => `$${price.toFixed(2)}`;
+
+        async function fetchProducts() {
+            try {
+                const response = await fetch('/api/products'); // Adjust the endpoint to match your API.
+                const products = await response.json();
+                populateProductList(products);
+            } catch (error) {
+                console.error('Error fetching products:', error);
+            }
+        }
+
+        function populateProductList(products) {
+            const productContainer = document.getElementById("product-list");
+            products.forEach(product => {
+                const productHTML = `
+                    <div class="product">
+                        <img src="${product.image}" alt="${product.name}" />
+                        <h3>${product.name}</h3>
+                        <p>${formatPrice(product.price)}</p>
+                        <button onclick="addToCart(${product.id}, '${product.name}', '${product.image}', ${product.price})">Add to Cart</button>
+                    </div>
+                `;
+                productContainer.innerHTML += productHTML;
+            });
+        }
+
+        function updateCartUI() {
+            const cartCount = document.getElementById("CartCount");
+            const miniCartItems = document.getElementById("mini-cart-items");
+            const cartSubtotal = document.getElementById("cart-subtotal");
+
+            cartCount.textContent = cart.length;
+            miniCartItems.innerHTML = "";
+            let subtotal = 0;
+
+            cart.forEach((item, index) => {
+                subtotal += item.price * item.quantity;
+                miniCartItems.innerHTML += `
+                    <li class="item">
+                        <a class="product-image" href="#">
+                            <img src="${item.image}" alt="${item.name}" />
+                        </a>
+                        <div class="product-details">
+                            <a href="#" class="remove" onclick="removeFromCart(${index})"><i class="anm anm-times-l"></i></a>
+                            <a class="pName" href="#">${item.name}</a>
+                            <div class="wrapQtyBtn">
+                                <div class="qtyField">
+                                    <span class="label">Qty:</span>
+                                    <input type="number" value="${item.quantity}" class="product-form__input qty" min="1" onchange="updateQuantity(${index}, this.value)">
+                                </div>
+                            </div>
+                            <div class="priceRow">
+                                <div class="product-price">
+                                    <span class="money">${formatPrice(item.price * item.quantity)}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                `;
+            });
+
+            cartSubtotal.innerHTML = `<span class="money">${formatPrice(subtotal)}</span>`;
+            document.getElementById("header-cart").style.display = cart.length > 0 ? "block" : "none";
+        }
+
+        function addToCart(id, name, image, price) {
+            const existingItem = cart.find(item => item.id === id);
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({ id, name, image, price, quantity: 1 });
+            }
+            updateCartUI();
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            updateCartUI();
+        }
+
+        function updateQuantity(index, quantity) {
+            if (quantity < 1) {
+                removeFromCart(index);
+            } else {
+                cart[index].quantity = parseInt(quantity, 10);
+                updateCartUI();
+            }
+        }
+
+        fetchProducts();
+    });
+</script>
+
+<script>
+    var $grid = $('.grid').masonry({
+        itemSelector: '.grid-item',
+        percentPosition: true,
+        columnWidth: '.grid-sizer'
+    });
+
+    $grid.imagesLoaded().progress(function () {
+        $grid.masonry();
+    });
+
+
+    const suggestionsContainer = document.getElementById('suggestions');
+
+// Sample items from the web store (replace with an API call to fetch actual data)
+const items = [
+    { name: 'Men’s Classic T-Shirt', url: '/products/classic-tshirt' },
+    { name: 'Men’s Running Shoes', url: '/products/running-shoes' },
+    { name: 'Men’s Leather Wallet', url: '/products/leather-wallet' },
+    { name: 'Men’s Denim Jacket', url: '/products/denim-jacket' },
+    { name: 'Men’s Silk Tie', url: '/products/silk-tie' }
+];
+
+function showSuggestions(query) {
+    suggestionsContainer.innerHTML = ''; // Clear previous suggestions
+    if (!query) {
+        suggestionsContainer.style.display = 'none';
+        return;
+    }
+    const filteredItems = items.filter(item =>
+        item.name.toLowerCase().includes(query.toLowerCase())
+    );
+    if (filteredItems.length > 0) {
+        suggestionsContainer.style.display = 'block';
+        filteredItems.forEach(item => {
+            const suggestion = document.createElement('div');
+            suggestion.className = 'suggestion';
+            suggestion.innerHTML = `<a href="${item.url}">${item.name}</a>`;
+            suggestionsContainer.appendChild(suggestion);
+        });
+    } else {
+        suggestionsContainer.style.display = 'none';
+    }
+}
+
+</script>
+
+
+</body>
+
+
+</html>

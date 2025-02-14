@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sage & Silk | Login & Signup</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Import fonts */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url('/assets/images/signup.jpg'); /* Add your image URL here */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: flex-end; /* Align to the right */
+            align-items: center;
+            height: 100vh;
+            padding-right: 200px; /* Padding on the right side */
+            overflow: hidden;
+        }
+
+        /* Container Styling */
+        .form-container {
+            width: 500px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Form Box Styling */
+        .form-box {
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+
+        .form-box h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-box p {
+            font-size: 20px;
+            color: white; /* Change text color to white */
+            margin-bottom: 1rem;
+        }
+
+        .form-box input[type="email"], .form-box input[type="password"], .form-box input[type="text"] {
+            width: 100%; /* Full width to match form box */
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            outline: none;
+            font-size: 16px;
+        }
+
+        .form-box .btn {
+            width: 100%; /* Full width to match form box */
+            padding: 12px;
+            background-color: #8e7d6b;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+        }
+
+        .form-box .btn:hover {
+            background-color: #6e5b4a;
+        }
+
+        /* Alternative Action Links */
+        .alt-action {
+            margin-top: 1rem;
+            font-size: 14px;
+            color: white; /* Change link color to white */
+        }
+
+        .alt-action a {
+            color: #8e7d6b;
+            text-decoration: none;
+        }
+
+        .alt-action a:hover {
+            text-decoration: underline;
+        }
+
+        /* Social Login Buttons */
+        .social-login {
+            margin-top: 2rem;
+        }
+
+        .social-login a {
+            display: block;
+            width: 100%; /* Full width to match form box */
+            padding: 12px;
+            margin: 10px 0;
+            background-color: #8e7d6b; /* Base color for both buttons */
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-login a.google {
+            background-color: #db4437; /* Google red */
+        }
+
+        .social-login a.microsoft {
+            background-color: #0078d4; /* Microsoft blue */
+        }
+
+        .social-login a:hover {
+            background-color: #6e5b4a; /* Darker shade for base */
+        }
+
+        .social-login a.google:hover {
+            background-color: #c1351d; /* Darker red for Google */
+        }
+
+        .social-login a.microsoft:hover {
+            background-color: #005a9e; /* Darker blue for Microsoft */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .form-container {
+                width: 90%;
+                padding: 1.5rem;
+            }
+
+            .form-box h2 {
+                font-size: 20px;
+            }
+        }
+        .password-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: white;  /* White background */
+    padding: 8px;             /* Padding for spacing */
+    border-radius: 4px;       /* Optional: rounded corners */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for contrast */
+}
+
+.password-container label {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <div class="form-box signup-box">
+            <form action="/signup" method="POST">
+                <% if (errors && errors.length > 0) { %>
+                    <% errors.forEach(error => { %>
+                        <p class="notice" style="color:black; font-style:italic; font-weight: bolder;" ><%= error %></p>
+                    <% }) %>
+                <% } %>
+    
+                <h2>Join the Sage & Silk Family</h2>
+                <p>Experience fashion like never before.</p>
+    
+                <!-- Ensure input names match what you're accessing in the server code -->
+                <input type="text" name="username" placeholder="Username" required autocomplete="off">
+                <input type="email" name="email" placeholder="Email" required autocomplete="off">
+    
+                <!-- Password field with toggle option -->
+                <div class="password-container">
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        placeholder="Password" 
+                        required 
+                        autocomplete="off">
+                    <label>
+                        <input 
+                            type="checkbox" 
+                            id="show-password" 
+                            onclick="togglePasswordVisibility()"> 
+                        Show Password
+                    </label>
+                </div>
+    
+                <button type="submit" class="btn">Sign Up</button>
+                <p class="alt-action">Already have an account? <a href="/login">Log in</a></p>
+            </form>
+    
+            <!-- Microsoft and Google Login Buttons -->
+            <div class="social-login">
+                <a href="/auth/microsoft" class="microsoft">Signup with Microsoft</a>
+                <a href="/auth/google" class="google">Signup with Google</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function togglePasswordVisibility() {
+            const passwordInput = document.getElementById('password');
+            const showPasswordCheckbox = document.getElementById('show-password');
+            
+            if (showPasswordCheckbox.checked) {
+                passwordInput.type = 'text';
+            } else {
+                passwordInput.type = 'password';
+            }
+        }
+    </script>
+        
