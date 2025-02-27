@@ -14,3 +14,7 @@ Open the .html file of your choice and get customizing. CSS skills not included.
 Upload to your server or just stare at it lovingly on your local machine. Your call.
 Contributions Welcome! ❤️
 Got a fancy idea? Found a bug? Feel free to contribute! We welcome PRs, feedback, and internet memes.
+
+Projects
+
+https://jhokitchen.netlify.app/
