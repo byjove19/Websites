@@ -28,6 +28,7 @@ Got ideas? Found a bug? PRs and feedback are always welcome—bonus points for s
 ## Check Out My Work  
 🌐 **Live Project:** [Jho Kitchen](https://jhokitchen.netlify.app/)  
 🛍️ **My Clothing Store:** [Sage & Silk](https://sage-silk.netlify.app/) 
+
 🐦 **Follow Me on X:** [@Defi_BabyJho]  
 
 ---
